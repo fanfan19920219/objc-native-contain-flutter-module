@@ -1,0 +1,6 @@
+framework module Pods_fixFlutter_fixFlutterUITests {
+  umbrella header "Pods-fixFlutter-fixFlutterUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

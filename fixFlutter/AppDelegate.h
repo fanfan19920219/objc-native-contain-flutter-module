@@ -7,8 +7,10 @@
 
 #import <UIKit/UIKit.h>
 
+@import UIKit;
+@import Flutter;
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-
+@property (nonatomic,strong) FlutterEngine *flutterEngine;
 
 @end
 

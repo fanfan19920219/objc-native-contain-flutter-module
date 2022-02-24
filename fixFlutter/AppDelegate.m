@@ -7,19 +7,33 @@
 
 #import "AppDelegate.h"
 
+#import <FlutterPluginRegistrant/GeneratedPluginRegistrant.h>
+
+
+
 @interface AppDelegate ()
+
+
 
 @end
 
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+//- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+//    // Override point for customization after application launch.
+//    return YES;
+//}
+
+- (BOOL)application:(UIApplication *)application
+    didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> *)launchOptions {
+      
+  self.flutterEngine = [[FlutterEngine alloc] initWithName:@"my flutter engine"];
+    [self.flutterEngine run];
+      
+  [GeneratedPluginRegistrant registerWithRegistry:self.flutterEngine];
     return YES;
 }
-
-
 #pragma mark - UISceneSession lifecycle
 
 

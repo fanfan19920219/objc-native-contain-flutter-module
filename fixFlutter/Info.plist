@@ -62,5 +62,17 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <key>NSBonjourServices</key>
+
+        <array>
+
+            <string>_dartobservatory._tcp</string>
+
+        </array>
+
+        <key>NSLocalNetworkUsageDescription</key>
+
+        <string>Main</string>
+    
 </dict>
 </plist>
